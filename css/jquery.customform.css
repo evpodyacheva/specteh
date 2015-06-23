@@ -1,0 +1,141 @@
+/*!
+ * jQuery Custom Form Plugin
+ * Examples and documentation at: http://zoomwebstudio.ru/tools/customform/
+ * Copyright (c) 2011-2012 Zoomwebstudio, M. Malyukov
+ * Version: 1.1 (11-JUL-2012)
+ * Dual licensed under the MIT and GPL licenses.
+ * Requires: jQuery v1.7 or later
+ */
+.custom-select-box {	
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	position:relative;
+	display:inline-block;
+}
+	.custom-select-box .custom-select-field:after {
+		content:"";
+		border-color:  #a6a6a6 transparent ;
+		border-style: solid;
+		border-width: 5px 5px 0 5px ;
+		content: "";
+		display: block;
+		right: 8px;
+		position: absolute;
+		top: 12px;
+		width: 0;
+	}
+	.custom-select-box .custom-select-field {
+		padding: 4px 25px 4px 5px;
+		margin: 0;
+		border: 1px solid #B3B3B3;		
+		border-radius: 3px;
+		box-shadow: 1px 1px 1px #D9D9D9 inset;
+		cursor:pointer;
+		height:18px;
+		background:#FFF;
+	}
+	.custom-select-box .custom-select-list {
+		display:none;
+		position:absolute;
+		border:1px solid #BEC4C7;
+		background:#FFF;
+		z-index:95;
+		left:0;
+		top:27px;
+	}
+	.custom-select-box .custom-select-list li {
+		cursor:pointer;
+		padding: 3px 5px;
+	}
+	.custom-select-box .custom-select-list li:hover {
+		background:#beebff;
+	}
+.custom-radio-box {
+	display:inline-block;
+}
+	.custom-radio-box .custom-radio {
+		width:15px;
+		height:15px;
+		border: 1px solid #B3B3B3;		
+		border-radius: 8px;
+		background:#FFFFFF;
+		cursor:pointer;
+		position:relative;
+	}
+	.custom-radio-box .custom-radio.checked:after {
+		width:9px;
+		height:9px;	
+		border-radius: 5px;
+		background:#BEEBFF;
+		cursor:pointer;
+		position:absolute;
+		left:3px;
+		top:3px;
+		content:"";
+		display:block;
+	}
+.custom-checkbox-box {
+	display:inline-block;
+}
+	.custom-checkbox-box .custom-checkbox {
+		border:1px solid #B3B3B3;
+		width:15px;
+		height:15px;
+		background:#FFFFFF;
+		cursor:pointer;
+		position:relative;
+	}
+	.custom-checkbox-box .custom-checkbox.checked:after {
+		width:9px;
+		height:9px;
+		background:#BEEBFF;
+		cursor:pointer;
+		position:absolute;
+		left:3px;
+		top:3px;
+		content:"";
+		display:block;
+	}
+.custom-file-box {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	text-align: left;
+	vertical-align: middle;
+}
+	.custom-file-box .custom-file-button {
+		display:inline-block;
+		border:1px solid #acacac;
+		font-size:13px;
+		color:#333333;
+		text-align:center;
+		padding:3px 15px;
+		text-decoration:none;
+		box-shadow: inset 0 0 1px #FFFFFF;
+		text-shadow: 0 1px 1px #FFFFFF;
+		background: #f9f9f9; /* Old browsers */
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#dbdbdb');
+		background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#dbdbdb)); /* for webkit browsers */
+		background: -moz-linear-gradient(center top , #f9f9f9, #dbdbdb); /* for firefox 3.6+ */
+		background: -o-linear-gradient(top,#f9f9f9 0%,#dbdbdb 100%); /* for opera */
+		background: linear-gradient(center top , #f9f9f9, #dbdbdb);
+		user-select: none;
+	}
+	.custom-file-box:hover .custom-file-button {
+		border:1px solid #b3b3b3;
+		background: #ededed;
+		background: -moz-linear-gradient(top,  #fafafa 0%, #e8e8e8 85%, #fafafa 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(85%,#e8e8e8), color-stop(100%,#fafafa));
+		background: -o-linear-gradient(top,  #fafafa 0%,#e8e8e8 85%,#fafafa 100%);
+		background: linear-gradient(top,  #fafafa 0%,#e8e8e8 85%,#fafafa 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e8e8e8',GradientType=0 );
+	}
+	.custom-file-box input[type=file] {
+		cursor: pointer;
+		font-size: 90px;
+		height: 32px;
+		left: -932px;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+	}
